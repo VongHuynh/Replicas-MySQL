@@ -1,4 +1,5 @@
 # Replicas-MySQL
+Nếu muốn đồng bộ cả cấu trúc thì cần chỉ định log file của master cho 2 node master: MASTER_LOG_FILE='mysql-bin-1.000003'
 1. Cài đặt Mysql Server docker container
 
 Khởi tạo một docker network:
