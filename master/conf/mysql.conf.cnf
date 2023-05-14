@@ -5,5 +5,7 @@ default_authentication_plugin = mysql_native_password
 
 server-id = 1
 log_bin = 1
+
+# change binlog_format, and binlog_do_db =* or name of db if replicas other db
 binlog_format = ROW
 binlog_do_db = mydb
