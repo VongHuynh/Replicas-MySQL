@@ -73,5 +73,9 @@ done
 
 link resource guide: https://viblo.asia/p/database-replication-with-docker-mysql-images-rails-application-bWrZnxRw5xw
 
+----------------------------------------------------------------
+Docker MySQL master-slave replication mysql 8.0 user compose
+# Run
+To run this examples you will need to start containers with "docker-compose" and after starting setup replication. See commands inside ./build.sh.
 
 
