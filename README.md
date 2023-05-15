@@ -1,4 +1,4 @@
-# Replicas-MySQL use image and 
+# Replicas-MySQL master-slave use image and handmade mysql 5.7
 
 1. Cài đặt Mysql Server docker container 
 
@@ -75,7 +75,7 @@ done
 link resource guide: https://viblo.asia/p/database-replication-with-docker-mysql-images-rails-application-bWrZnxRw5xw
 
 ----------------------------------------------------------------
-# Run Docker MySQL master-slave replication mysql 8.0 user compose
+# Run Docker MySQL master-slave replication mysql 8.0 user compose mysql 8.0
 To run this examples you will need to start containers with "docker-compose" and after starting setup replication. See commands inside ./build.sh.
 
 TEST:
