@@ -1,6 +1,6 @@
-# Replicas-MySQL
-Nếu muốn đồng bộ cả cấu trúc thì cần chỉ định log file của master cho 2 node master: MASTER_LOG_FILE='mysql-bin-1.000003'
-1. Cài đặt Mysql Server docker container
+# Replicas-MySQL use image and 
+
+1. Cài đặt Mysql Server docker container 
 
 Khởi tạo một docker network:
 $ docker network create replicanet
@@ -75,8 +75,11 @@ done
 link resource guide: https://viblo.asia/p/database-replication-with-docker-mysql-images-rails-application-bWrZnxRw5xw
 
 ----------------------------------------------------------------
-Docker MySQL master-slave replication mysql 8.0 user compose
-# Run
+# Run Docker MySQL master-slave replication mysql 8.0 user compose
 To run this examples you will need to start containers with "docker-compose" and after starting setup replication. See commands inside ./build.sh.
+
+TEST:
+$ docker exec mysql_master sh -c "export MYSQL_PWD=111; mysql -u root mydb -e 'create table code(code int); insert into code values (100), (200)'"
+$ docker exec mysql_slave sh -c "export MYSQL_PWD=111; mysql -u root mydb -e 'select * from code \G'"
 
 
